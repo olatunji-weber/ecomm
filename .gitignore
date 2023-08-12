@@ -1,3 +1,7 @@
+#Files and Folders to exclude for me:
+ecommenv/
+ProjectFiles-EcommWebsite/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
