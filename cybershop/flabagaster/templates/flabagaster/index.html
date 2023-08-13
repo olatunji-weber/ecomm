@@ -5,9 +5,137 @@
 
 {% block title %}Home{% endblock title %}
 
+
+
+{% block banner-slider %}
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'flabagaster/images/banner/b1.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'flabagaster/images/banner/b2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'flabagaster/images/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'flabagaster/images/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{% endblock banner-slider %}
+
+
+
+{% block information %} 
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">Dodla offers a wide range of products in both liquid milk and by-product categories. The liquid milk comprises of 5 types of variants and the by-product comprises of 14 types of variants.
+
+        Dodla offers a wide range of milk products comprising of Fresh Milk, Butter, Ghee, Paneer, Curd, Flavoured Milk, Doodh Peda, Ice Cream and Skimmed Milk Power.</small>
+    </div>
+{% endblock information %}
+
+
+
+
 {% block main-content %}
-    <h3>This visuals are coming from an html file that extends a base html file....</h3>
-    <h1>This is the Life of a programmer. Creating things that impact the world from nothing but our minds</h1>
-    <hr>
-    <p>The first thing that you need to consider is how you will make headway....</p>
+    <div class="container">
+        <h2 class="text-center">Diary Products</h2>
+        <br><br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/buffalo-ghee.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Buffalo Ghee</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{ static 'flabagaster/images/cow-ghee.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Cow Chee</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/cow-milk.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Cow Milk</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/curd-premium.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Curd Premium</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/curd-total.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Curd Total</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/dbtoned-milk.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Dtoned Milk</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/fullcream-milk.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Fullcream Milk</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/icbars.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Icbars</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="#">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'flabagaster/images/kulfi.png' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Kulfi</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 {% endblock main-content %}
